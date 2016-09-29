@@ -1,0 +1,159 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>(def Clojure)</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/clojure.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<h1>(def Clojure</h1>
+					<h3>"one paren at a time"</h3>
+					<p>
+						<small>Andrzej Kimel</small>
+					</p>
+				</section>
+
+                <section>
+                  <section>
+                    <h2>(macroexpand Clojure)</h2>
+                    <div>
+                      <h3>Lisp</h3>
+                      <div>
+                        <img src="img/lisp_cycles.png"/>
+                        <a href="https://xkcd.com/297/" class="img-src">https://xkcd.com/297/</a>
+                      </div>
+                    </div>
+                  </section>
+
+                  <section>
+                    <h2>(macroexpand Clojure)</h2>
+                    <div>
+                      <h3>JVM</h3>
+                      <div>
+                        <img class="plain seethrough" src="img/duke.svg"/>
+                        <a href="https://commons.wikimedia.org/wiki/File%3AWave.svg" class="img-src">https://commons.wikimedia.org/wiki/File%3AWave.svg</a>
+                      </div>
+                    </div>
+                  </section>
+
+                  <section>
+                    <h2>(macroexpand Clojure)</h2>
+                    <div>
+                      <ul>
+                        <li>dynamic typing</li>
+                        <li class="fragment">strict typing</li>
+                      </ul>
+                    </div>
+                  </section>
+
+                  <section>
+                    <h2>(macroexpand Clojure)</h2>
+
+                    <div>
+                      <h3>REPL</h3>
+                      <div>
+                        <img class="plain" src="img/console.png"/>
+                      </div>
+                    </div>
+                  </section>
+                </section>
+
+                <section>
+                  <h2>(macroexpand syntax)</h2>
+                  <code class="hljs" data-trim contenteditable>add(14, 28);</code>
+                  <code class="hljs fragment" data-trim contenteditable>add(14, 28)</code>
+                  <code class="hljs fragment" data-trim contenteditable>add(14 28)</code>
+                  <code class="hljs fragment" data-trim contenteditable>(add 14 28)</code>
+                  <code class="hljs fragment" data-trim contenteditable>(+ 14 28)</code>
+                </section>
+
+                <section>
+                  <div>
+                    <img class="plain" src="img/demo.jpg"/>
+                  </div>
+                </section>
+
+                <section>
+                  <section>
+                    <div>
+                      <img class="plain" src="img/whatif.jpg"/>
+                    </div>
+                  </section>
+
+                  <section>
+                    <h2>(def macro-usage)</h2>
+
+                    <div>
+                      <div>
+                        flow control
+                        <pre><code class="hljs" data-trim contenteditable>
+(while (interesting? url)
+  (tweet-about url))
+                        </code></pre>
+                      </div>
+                      <div class="fragment">
+                        DSL
+                        <pre><code class="hljs" data-trim contenteditable>
+(html [:span {:class "foo"} "bar"])
+                        </code></pre>
+                      </div>
+                      <div class="fragment">
+                        redefine syntax
+                        <pre><code class="hljs" data-trim contenteditable>
+(infix 1 + 2 * 3)
+                        </code></pre>
+                      </div>
+                    </div>
+
+                  </section>
+                </section>
+
+                <section>
+                  <h2>( Q & A )</h2>
+                </section>
+
+                <section>
+                  <h2>Thanks )</h2>
+                </section>
+
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				history: true,
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
