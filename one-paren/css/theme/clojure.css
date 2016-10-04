@@ -20,6 +20,23 @@ section.has-light-background, section.has-light-background h1, section.has-light
 .reveal img.seethrough {
   background: none; }
 
+.reveal mark {
+  color: #62aadb;
+  background: none; }
+
+.reveal .comment {
+  color: #aaa; }
+
+.reveal .credits {
+  text-align: right;
+  margin-right: 3em; }
+  .reveal .credits p {
+    display: block;
+    font-size: 0.6em;
+    margin: 0; }
+  .reveal .credits img {
+    width: 15%; }
+
 /*********************************************
  * GLOBAL STYLES
  *********************************************/

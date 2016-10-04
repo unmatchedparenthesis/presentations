@@ -59,6 +59,28 @@ section.has-light-background {
   background: none;
 }
 
+.reveal mark {
+  color: #62aadb;
+  background: none;
+}
+
+.reveal .comment {
+  color: #aaa;
+}
+
+.reveal .credits {
+  text-align: right;
+  margin-right: 3em;
+  p {
+    display: block;
+    font-size: 0.6em;
+    margin: 0;
+  }
+  img {
+    width: 15%;
+  }
+}
+
 // Theme template ------------------------------
 @import "../template/theme";
 // ---------------------------------------------
