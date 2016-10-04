@@ -37,6 +37,19 @@ section.has-light-background, section.has-light-background h1, section.has-light
   .reveal .credits img {
     width: 15%; }
 
+.reveal .typing {
+  display: flex;
+  justify-content: space-around; }
+  .reveal .typing div {
+    width: 40%;
+    height: 4em;
+    line-height: 4em;
+    text-align: center;
+    vertical-align: center;
+    background-color: #555;
+    border: solid 0.1em #ddd;
+    border-radius: 0.5em; }
+
 /*********************************************
  * GLOBAL STYLES
  *********************************************/

@@ -22,123 +22,119 @@
 		</script>
 	</head>
 	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section>
-					<h1>(<mark>def</mark> Clojure</h1>
-					<h3 class="comment">"one paren at a time"</h3>
-          <img class="plain seethrough" src="img/clojure_logo.png"/>
-          <div class="credits">
-            <p>Andrzej Kimel</p>
-            <img class="plain seethrough" src="img/logo_white.png"/>
-          </div>
-				</section>
+      <div class="reveal">
+        <div class="slides">
+          <section>
+            <h1>(<mark>def</mark> Clojure</h1>
+            <h3 class="comment">"one paren at a time"</h3>
+            <img class="plain seethrough" src="img/clojure_logo.png"/>
+            <div class="credits">
+              <p>Andrzej Kimel</p>
+              <img class="plain seethrough" src="img/logo_white.png"/>
+            </div>
+          </section>
 
-                <section>
-                  <section>
-                    <h2>(<mark>macroexpand</mark> Clojure)</h2>
-                    <div>
-                      <h3>Lisp</h3>
-                      <div>
-                        <img src="img/lisp_cycles.png"/>
-                        <a href="https://xkcd.com/297/" class="img-src">https://xkcd.com/297/</a>
-                      </div>
-                    </div>
-                  </section>
+          <section>
+            <section>
+              <h2>(<mark>macroexpand</mark> Clojure)</h2>
+              <div>
+                <h3>Lisp</h3>
+                <div>
+                  <img src="img/lisp_cycles.png"/>
+                  <a href="https://xkcd.com/297/" class="img-src">https://xkcd.com/297/</a>
+                </div>
+              </div>
+            </section>
 
-                  <section>
-                    <h2>(<mark>macroexpand</mark> Clojure)</h2>
-                    <div>
-                      <h3>JVM</h3>
-                      <div>
-                        <img class="plain seethrough" src="img/duke.svg"/>
-                        <a href="https://commons.wikimedia.org/wiki/File%3AWave.svg" class="img-src">https://commons.wikimedia.org/wiki/File%3AWave.svg</a>
-                      </div>
-                    </div>
-                  </section>
+            <section>
+              <h2>(<mark>macroexpand</mark> Clojure)</h2>
+              <div>
+                <h3>JVM</h3>
+                <div>
+                  <img class="plain seethrough" src="img/duke.svg"/>
+                  <a href="https://commons.wikimedia.org/wiki/File%3AWave.svg" class="img-src">https://commons.wikimedia.org/wiki/File%3AWave.svg</a>
+                </div>
+              </div>
+            </section>
 
-                  <section>
-                    <h2>(<mark>macroexpand</mark> Clojure)</h2>
-                    <div>
-                      <ul>
-                        <li>dynamic typing</li>
-                        <li class="fragment">strict typing</li>
-                      </ul>
-                    </div>
-                  </section>
+            <section>
+              <h2>(<mark>macroexpand</mark> Clojure)</h2>
+              <div class="typing">
+                <div>dynamic typing</div>
+                <div class="fragment">strict typing</div>
+              </div>
+            </section>
 
-                  <section>
-                    <h2>(<mark>macroexpand</mark> Clojure)</h2>
+            <section>
+              <h2>(<mark>macroexpand</mark> Clojure)</h2>
 
-                    <div>
-                      <h3>REPL</h3>
-                      <div>
-                        <img class="plain" src="img/console.png"/>
-                      </div>
-                    </div>
-                  </section>
-                </section>
+              <div>
+                <h3>REPL</h3>
+                <div>
+                  <img class="plain" src="img/console.png"/>
+                </div>
+              </div>
+            </section>
+          </section>
 
-                <section>
-                  <h2>(<mark>macroexpand</mark> syntax)</h2>
-                  <code class="hljs" data-trim contenteditable>add(14, 28);</code>
-                  <code class="hljs fragment" data-trim contenteditable>add(14, 28)</code>
-                  <code class="hljs fragment" data-trim contenteditable>add(14 28)</code>
-                  <code class="hljs fragment" data-trim contenteditable>(add 14 28)</code>
-                  <code class="hljs fragment" data-trim contenteditable>(+ 14 28)</code>
-                </section>
+          <section>
+            <h2>(<mark>macroexpand</mark> syntax)</h2>
+            <code class="hljs" data-trim contenteditable>add(14, 28);</code>
+            <code class="hljs fragment" data-trim contenteditable>add(14, 28)</code>
+            <code class="hljs fragment" data-trim contenteditable>add(14 28)</code>
+            <code class="hljs fragment" data-trim contenteditable>(add 14 28)</code>
+            <code class="hljs fragment" data-trim contenteditable>(+ 14 28)</code>
+          </section>
 
-                <section>
-                  <div>
-                    <img class="plain" src="img/demo.jpg"/>
-                  </div>
-                </section>
+          <section>
+            <div>
+              <img class="plain" src="img/demo.jpg"/>
+            </div>
+          </section>
 
-                <section>
-                  <section>
-                    <div>
-                      <img class="plain" src="img/whatif.jpg"/>
-                    </div>
-                  </section>
+          <section>
+            <section>
+              <div>
+                <img class="plain" src="img/whatif.jpg"/>
+              </div>
+            </section>
 
-                  <section>
-                    <h2>(<mark>def</mark> macro-usage)</h2>
+            <section>
+              <h2>(<mark>def</mark> macro-usage)</h2>
 
-                    <div>
-                      <div>
-                        flow control
-                        <pre><code class="hljs" data-trim contenteditable>
-(while (interesting? url)
-  (tweet-about url))
-                        </code></pre>
-                      </div>
-                      <div class="fragment">
-                        DSL
-                        <pre><code class="hljs" data-trim contenteditable>
+              <div>
+                <div>
+                  flow control
+                  <pre><code class="hljs" data-trim contenteditable>
+(and (mice-ready?)
+     (huge-amout-of-memory-available? deep-thought)
+     (= 42 (solve-ultimate-question-of-life-universe-and-everything?)))
+                  </code></pre>
+                </div>
+                <div class="fragment">
+                  DSL
+                  <pre><code class="hljs" data-trim contenteditable>
 (html [:span {:class "foo"} "bar"])
-                        </code></pre>
-                      </div>
-                      <div class="fragment">
-                        redefine syntax
-                        <pre><code class="hljs" data-trim contenteditable>
+                  </code></pre>
+                </div>
+                <div class="fragment">
+                  redefine syntax
+                  <pre><code class="hljs" data-trim contenteditable>
 (infix 1 + 2 * 3)
-                        </code></pre>
-                      </div>
-                    </div>
+                  </code></pre>
+                </div>
+              </div>
 
-                  </section>
-                </section>
+            </section>
+          </section>
 
-                <section>
-                  <h2>( Q & A )</h2>
-                </section>
 
-                <section>
-                  <h2>Thanks )</h2>
-                </section>
+          <section>
+            <h2>Thanks )</h2>
+          </section>
 
-			</div>
-		</div>
+        </div>
+      </div>
 
 		<script src="lib/js/head.min.js"></script>
 		<script src="js/reveal.js"></script>
