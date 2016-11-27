@@ -87,9 +87,18 @@
           </section>
 
           <section>
-            <div>
-              <img class="plain" src="img/demo.jpg"/>
-            </div>
+            <section>
+              <div>
+                <img class="plain" src="img/demo.jpg"/>
+              </div>
+            </section>
+
+            <section>
+              <h2>(<mark>def</mark> rant)</h2>
+              <div>"It is better to have 100 functions operate on one data structure than to have 10 functions operate on 10 data structures."
+                <div class="quote">- Alan J. Perlis</div>
+              </div>
+            </section>
           </section>
 
           <section>
@@ -104,11 +113,11 @@
 
               <div>
                 <div>
-                  flow control
+                  evaluation control
                   <pre><code class="hljs" data-trim contenteditable>
-(and (mice-ready?)
-     (huge-amout-of-memory-available? deep-thought)
-     (= 42 (solve-ultimate-question-of-life-universe-and-everything?)))
+(and (quick-validation input)
+     (a-bit-longer-condition input)
+     (terribly-long-io-based-check input))
                   </code></pre>
                 </div>
                 <div class="fragment">
@@ -128,9 +137,43 @@
             </section>
           </section>
 
+          <section>
+            <h2>(<mark>declare</mark> more-features)</h2>
+            <ul>
+              <li>runtime polymorphism via <mark>multimethods</mark></li>
+              <li>software transactional memory (<mark>atom</mark>, <mark>ref</mark>, <mark>agent</mark>)</li>
+              <li>validation and test generation with <mark>clojure.spec</mark></li>
+              <li>logic programming with <mark>clojure.clore/logic</mark></li>
+            </ul>
+          </section>
+
+          <section>
+            <h2>(<mark>macroexpand</mark> IDE)</h2>
+            <ul class="plain">
+              <li><img class="plain icon seethrough" src="img/emacs.png"/>Emacs + Cider</li>
+              <li><img class="plain icon seethrough" src="img/vim.png"/>vim + fireplace</li>
+              <li><img class="plain icon seethrough" src="img/lighttable.png"/>LightTable <span class="fragment current-visible"><mark>&#8678; start here</mark></span></li>
+              <li><img class="plain icon seethrough" src="img/intellij.png"/>IntelliJ + Cursive</li>
+            </ul>
+          </section>
+
+          <section>
+            <h2>(<mark>def</mark> first-steps)</h2>
+            <div class="books">
+              <img class="plain" src="img/programming-clojure.png"/>
+              <img class="plain" src="img/joy-of-clojure.png"/>
+              <img class="plain" src="img/clojure-for-brave.png"/>
+            </div>
+            <img style="background-color: white" src="img/4clojure.png"/>
+          </section>
 
           <section>
             <h2>Thanks )</h2>
+            <img class="plain seethrough" src="img/clojure_logo.png"/>
+            <div class="credits">
+              <p>Andrzej Kimel</p>
+              <img class="plain seethrough" src="img/logo_white.png"/>
+            </div>
           </section>
 
         </div>

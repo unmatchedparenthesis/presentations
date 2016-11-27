@@ -59,6 +59,17 @@ section.has-light-background {
   background: none;
 }
 
+.reveal img.icon {
+  width: 1.5em;
+  vertical-align: middle;
+  padding: 0.2em 0.8em;
+}
+
+.reveal .books img {
+  height: 6em;
+  margin: 0.5em;
+}
+
 .reveal mark {
   color: #62aadb;
   background: none;
@@ -66,6 +77,10 @@ section.has-light-background {
 
 .reveal .comment {
   color: #aaa;
+}
+
+.reveal ul.plain {
+  list-style-type: none;
 }
 
 .reveal .credits {
@@ -79,6 +94,11 @@ section.has-light-background {
   img {
     width: 15%;
   }
+}
+
+.reveal .quote {
+  font-style: italic;
+  text-align: right;
 }
 
 .reveal .typing {
