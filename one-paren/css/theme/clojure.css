@@ -27,7 +27,17 @@ section.has-light-background, section.has-light-background h1, section.has-light
 
 .reveal .books img {
   height: 6em;
-  margin: 0.5em; }
+  margin: 0; }
+
+.reveal .books > span {
+  display: inline-block;
+  margin: 0 0.5em; }
+
+.reveal .books + div {
+  margin-top: 0.5em;
+  display: inline-block; }
+  .reveal .books + div img {
+    margin: 0; }
 
 .reveal mark {
   color: #62aadb;
